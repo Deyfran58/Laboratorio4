@@ -1,0 +1,38 @@
+$primary-color: #ffffff;
+$secondary-color: #333333;
+$hover-color: #f0f0f0;
+$active-color: #e0e0e0;
+
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 5px 8px;
+  background-color: $primary-color;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid $secondary-color;
+  max-width: 70px;
+}
+
+button[mat-button] {
+  color: $secondary-color;
+  font-weight: 500;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  padding: 2px 5px;
+  margin-right: 3px;
+  border-radius: 4px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $hover-color;
+  }
+}
+
+.mat-menu-panel {
+  background-color: $primary-color;
+  color: $secondary-color;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
